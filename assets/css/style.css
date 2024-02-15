@@ -1496,8 +1496,9 @@ section {
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/
-.recent-blog-posts .post-box {
+.recent-blog-posts .post-box ,.post-box-ete{
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  /* background-color: red; */
   transition: 0.3s;
   height: 100%;
   overflow: hidden;
@@ -1508,17 +1509,17 @@ section {
   flex-direction: column;
 }
 
-.recent-blog-posts .post-box .post-img {
+.recent-blog-posts .post-box .post-img,.recent-blog-posts .post-box-ete .post-img {
   overflow: hidden;
   margin: -30px -30px 15px -30px;
   position: relative;
 }
 
-.recent-blog-posts .post-box .post-img img {
+.recent-blog-posts .post-box .post-img img,.recent-blog-posts .post-box-ete .post-img img {
   transition: 0.5s;
 }
 
-.recent-blog-posts .post-box .post-date {
+.recent-blog-posts .post-box .post-date ,.recent-blog-posts .post-box-ete .post-date {
   font-size: 16px;
   font-weight: 600;
   color: rgba(1, 41, 112, 0.6);
@@ -1526,7 +1527,7 @@ section {
   margin-bottom: 10px;
 }
 
-.recent-blog-posts .post-box .post-title {
+.recent-blog-posts .post-box .post-title,.recent-blog-posts .post-box-ete .post-title {
   font-size: 24px;
   color: #012970;
   font-weight: 700;
@@ -1535,7 +1536,7 @@ section {
   transition: 0.3s;
 }
 
-.recent-blog-posts .post-box .readmore {
+.recent-blog-posts .post-box .readmore,.recent-blog-posts .post-box-ete .readmore {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -1543,17 +1544,17 @@ section {
   transition: 0.3s;
 }
 
-.recent-blog-posts .post-box .readmore i {
+.recent-blog-posts .post-box .readmore i,.recent-blog-posts .post-box-ete .readmore i {
   line-height: 0;
   margin-left: 4px;
   font-size: 18px;
 }
 
-.recent-blog-posts .post-box:hover .post-title {
+.recent-blog-posts .post-box:hover .post-title,.recent-blog-posts .post-box-ete:hover .post-title {
   color: #4154f1;
 }
 
-.recent-blog-posts .post-box:hover .post-img img {
+.recent-blog-posts .post-box:hover .post-img img,.recent-blog-posts .post-box-ete:hover .post-img img {
   transform: rotate(6deg) scale(1.2);
 }
 
