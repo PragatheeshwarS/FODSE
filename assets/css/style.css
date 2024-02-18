@@ -1507,6 +1507,7 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .recent-blog-posts .post-box .post-img,.recent-blog-posts .post-box-ete .post-img {
@@ -1556,6 +1557,7 @@ section {
 
 .recent-blog-posts .post-box:hover .post-img img,.recent-blog-posts .post-box-ete:hover .post-img img {
   transform: rotate(6deg) scale(1.2);
+  cursor:pointer;
 }
 
 /*--------------------------------------------------------------
