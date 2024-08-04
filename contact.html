@@ -14,6 +14,7 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+<<<<<<< Updated upstream
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -109,11 +110,97 @@
               </div> -->
             </div>
 
-          </div>
+=======
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/forms.css" />
+  </head>
+  <body>
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span>FODSE</span>
+        </a>
 
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <!-- <li><a class="nav-link scrollto" href="memb.html">Membership</a></li> -->
+            <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+            <li><a class="nav-link scrollto" href="events.html">Events</a></li>
+            <li>
+              <a class="nav-link scrollto active" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+
+    <div class="centre">
+      <div>
+        <div>
+          <div class="info-box">
+            <h3>Call Us</h3>
+            <p>Secretary - 98409 65005<br />Committee Chair 72000 97918</p>
+>>>>>>> Stashed changes
+          </div>
+        </div>
+
+<<<<<<< Updated upstream
           <div class="col-lg-6">
             <div class="col-lg-12 hero-img" data-aos="zoom-out" data-aos-delay="200">
               <img src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/02/Digital-Marketing-Write-For-Us.gif" class="img-fluid" alt="">
+=======
+        <div>
+          <div class="info-box">
+            <h3 style="text-align: center">Get connected</h3>
+            <br />
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <a href="mailto:fodse2.svce@gmail.com" target="_blank"
+                ><i style="font-size: 40px" class="bi bi-envelope"></i
+              ></a>
+              <a
+                href="https://instagram.com/fodse_svce?igshid=NmE0MzVhZDY="
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/fodse-svce/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+>>>>>>> Stashed changes
             </div>
 
           </div>
@@ -122,6 +209,7 @@
 
       </div>
 
+<<<<<<< Updated upstream
     </section><!-- End Contact Section -->
 	      
    <br>
@@ -161,4 +249,81 @@
 
 </body>
 
+=======
+      <div class="box">
+        <div class="form">
+          <h2>Contact Form</h2>
+          <form>
+            <div class="inputbox">
+              <input type="text" value="" id="username" required />
+              <span>Name</span>
+            </div>
+            <div class="inputbox">
+              <input type="email" value="" id="email" required />
+              <span>E-mail</span>
+            </div>
+            <div class="inputbox">
+              <input type="text" value="" id="FeedBack" required />
+              <span>FeedBack</span>
+            </div>
+            <input type="submit" value="submit" class="sub" id="submit" />
+          </form>
+        </div>
+      </div>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import {
+          getDatabase,
+          ref,
+          set,
+          get,
+          child,
+        } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBOFTPfqReDc4q6_02iUP5TgjtJz1a8ZcY",
+          authDomain: "fodse-contact-page.firebaseapp.com",
+          databaseURL: "https://fodse-contact-page-default-rtdb.firebaseio.com",
+          projectId: "fodse-contact-page",
+          storageBucket: "fodse-contact-page.appspot.com",
+          messagingSenderId: "452190640811",
+          appId: "1:452190640811:web:0272ace7d48e718f6035ee",
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        //get ref to database services
+        const db = getDatabase(app);
+
+        document
+          .getElementById("submit")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            set(
+              ref(db, "Feedback/" + document.getElementById("username").value),
+              {
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                Feedback: document.getElementById("FeedBack").value,
+              }
+            );
+            alert("Feedback Submited Sucessfully !");
+          });
+      </script>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>@2024 FODSE club</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by Fodse</div>
+      </div>
+    </footer>
+  </body>
+>>>>>>> Stashed changes
 </html>
