@@ -1,6 +1,6 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  /* background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,7 @@ body {
 
 .form {
   text-align: center;
+  margin-top: 5%;
 }
 
 .form h2 {
