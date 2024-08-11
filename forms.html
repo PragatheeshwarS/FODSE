@@ -15,8 +15,8 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo.jpg" rel="icon" />
+    <link href="assets/img/logo.jpg" rel="apple-touch-icon" />
 
     <!-- Vendor CSS Files -->
     <link
@@ -43,7 +43,7 @@
         class="container-fluid container-xl d-flex align-items-center justify-content-between"
       >
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="" />
+          <img src="assets/img/logo.jpg" alt="" />
           <span>FODSE</span>
         </a>
 
@@ -71,29 +71,30 @@
         <h2>Contact Form</h2>
         <form id="contactForm">
           <div class="inputbox">
-            <input type="text" id="username" name="username" required />
             <span>Name</span>
+            <input type="text" id="username" name="username" required />
           </div>
           <div class="inputbox">
-            <input type="email" id="email" name="email" required />
             <span>College E-mail ID</span>
+            <input type="email" id="email" name="email" required />
           </div>
           <div class="inputbox">
-            <input type="text" id="registerNumber" name="registerNumber" required />
             <span>Register Number</span>
+            <input type="text" id="registerNumber" name="registerNumber" required />
           </div>
           <div class="inputbox">
+            <option value="" disabled selected>Select Department</option>
             <select id="department" name="department" required>
-              <option value="" disabled selected>Select Department</option>
               <option value="Artificial Intelligence and Data Science">Artificial Intelligence and Data Science</option>
               <option value="Computer Science and Engineering">Computer Science and Engineering</option>
               <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
               <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
               <option value="Information Technology">Information Technology</option>
             </select>
-            <span>Department</span>
+            <!-- <span>Department</span> -->
           </div>
           <div class="inputbox">
+            <span>Year</span>
             <select id="year" name="year" required>
               <option value="" disabled selected>Select Year</option>
               <option value="1st">1st</option>
@@ -101,16 +102,15 @@
               <option value="3rd">3rd</option>
               <option value="4th">4th</option>
             </select>
-            <span>Year</span>
           </div>
           <div class="inputbox">
+            <span>Section</span>
             <select id="section" name="section" required>
               <option value="" disabled selected>Select Section</option>
               <option value="A">A</option>
               <option value="B">B</option>
               <option value="C">C</option>
             </select>
-            <span>Section</span>
           </div>
           <div class="inputbox">
             <select id="eventRating" name="eventRating" required>
@@ -131,8 +131,8 @@
             </select>
           </div>
           <div class="inputbox">
-            <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
             <span>Any Suggestions for improvement?</span>
+            <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
           </div>
           <input type="submit" value="Submit" class="sub" />
         </form>
@@ -192,6 +192,29 @@
             alert("Error submitting feedback. Please try again later.");
           });
       });
+    </script>
+
+        <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            const emailField = document.getElementById('gmail');
+            const emailValue = emailField.value;
+            const emailError = document.getElementById('gmail-error');
+            const successMessage = document.getElementById('success-message');
+            
+            // Regular expression for validating the email format
+            const emailPattern = /^202\d[a-zA-Z]\d{4}@svce\.ac\.in$/;
+            
+            if (!emailPattern.test(emailValue)) {
+                // Prevent form submission and show error message
+                emailError.textContent = 'Email must be in the format 202XxXXXX@svce.ac.in, where X is a number and x is a character.';
+                successMessage.textContent = ''; // Clear success message
+                event.preventDefault();
+            } else {
+                // Clear error message and show success message
+                emailError.textContent = '';
+                successMessage.textContent = 'Submitted successfully!';
+            }
+        });
     </script>
   </body>
 </html>
