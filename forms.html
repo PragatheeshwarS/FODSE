@@ -83,13 +83,18 @@
             <input type="text" id="registerNumber" name="registerNumber" required />
           </div>
           <div class="inputbox">
-            <option value="" disabled selected>Select Department</option>
+            <span>Department</span>
             <select id="department" name="department" required>
+              <option value="" disabled selected>Select Department</option>
               <option value="Artificial Intelligence and Data Science">Artificial Intelligence and Data Science</option>
               <option value="Computer Science and Engineering">Computer Science and Engineering</option>
               <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
               <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
               <option value="Information Technology">Information Technology</option>
+              <option value="Biotechnology">Biotechnology</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Mech and Automation">Mech and Automation</option>
             </select>
             <!-- <span>Department</span> -->
           </div>
@@ -181,6 +186,8 @@
           interestedFutureEvents: formData.get("interestedFutureEvents"),
           suggestions: formData.get("suggestions")
         };
+
+        
 
         set(ref(db, "Feedback/" + feedbackData.username), feedbackData)
           .then(() => {
