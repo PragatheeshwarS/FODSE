@@ -45,6 +45,12 @@
         width: 100%;
       }
     }
+    @media (max-width: 1026px) {
+      .whole-container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   </style>
  
 </head>
@@ -80,8 +86,7 @@
 
   <div class="flex flex-col min-h-dvh">
     <main class="flex-1 bg-background text-foreground py-12 px-6">
-      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-  
+      <div class="whole-container container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Blogs -->
         <div class="col-span-2 flex flex-col gap-4">
 
@@ -246,6 +251,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </main>
   </div>
