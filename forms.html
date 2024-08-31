@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>FODSE Contact</title>
+    <meta content="" name="description" />
+    <title>FODSE Contact</title>
+    <meta content="" name="description" />
+
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/logo.png" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/forms.css" />
+  </head>
+  <body>
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span>FODSE</span>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto" href="index.html">Home</a>
+            </li>
+            <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+            <li><a class="nav-link scrollto" href="events.html">Events</a></li>
+            <li><a class="nav-link scrollto" href="blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto" href="forms.html">Forms</a></li>
+            <li>
+              <a class="nav-link scrollto" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+
+    <div class="box">
+      <div class="form">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+          <div class="inputbox">
+            <span>Name</span>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="inputbox">
+            <span>College E-mail ID</span>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="inputbox">
+            <span>Register Number</span>
+            <input type="text" id="registerNumber" name="registerNumber" required />
+          </div>
+          <div class="inputbox">
+            <span>Department</span>
+            <select id="department" name="department" required>
+              <option value="" disabled selected>Select Department</option>
+              <option value="Artificial Intelligence and Data Science">Artificial Intelligence and Data Science</option>
+              <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+              <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+              <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+              <option value="Information Technology">Information Technology</option>
+              <option value="Biotechnology">Biotechnology</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Mech and Automation">Mech and Automation</option>
+            </select>
+            <!-- <span>Department</span> -->
+          </div>
+          <div class="inputbox">
+            <span>Year</span>
+            <select id="year" name="year" required>
+              <option value="" disabled selected>Select Year</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+            </select>
+          </div>
+          <div class="inputbox">
+            <span>Section</span>
+            <select id="section" name="section" required>
+              <option value="" disabled selected>Select Section</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+          </div>
+          <div class="inputbox">
+            <select id="eventRating" name="eventRating" required>
+              <option value="" disabled selected>Rate your Event Experience on a scale of 1-5</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="inputbox">
+            <select id="interestedFutureEvents" name="interestedFutureEvents" required>
+              <option value="" disabled selected>Are you interested in participating in future events organized by FODSE?</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+          <div class="inputbox">
+            <span>Any Suggestions for improvement?</span>
+            <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+          </div>
+          <input type="submit" value="Submit" disabled class="sub" />
+        </form>
+      </div>
+    </div>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import {
+          getDatabase,
+          ref,
+          set,
+          get,
+          child,
+        } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDL-3smPd3_jdSp_VKugSYaedwcpIVabc8",
+          authDomain: "fodse-d8345.firebaseapp.com",
+          databaseURL: "https://fodse-d8345-default-rtdb.firebaseio.com",
+          projectId: "fodse-d8345",
+          storageBucket: "fodse-d8345.appspot.com",
+          messagingSenderId: "940414993205",
+          appId: "1:940414993205:web:6cffa4a007831a5a85427c"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        //get ref to database services
+        const db = getDatabase(app);
+
+         document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const feedbackData = {
+          username: formData.get("username"),
+          email: formData.get("email"),
+          registerNumber: formData.get("registerNumber"),
+          department: formData.get("department"),
+          year: formData.get("year"),
+          section: formData.get("section"),
+          eventRating: formData.get("eventRating"),
+          interestedFutureEvents: formData.get("interestedFutureEvents"),
+          suggestions: formData.get("suggestions")
+        };
+
+        
+
+        set(ref(db, "Feedback/" + feedbackData.username), feedbackData)
+          .then(() => {
+            alert("Feedback Submitted Successfully!");
+            document.getElementById("contactForm").reset();
+          })
+          .catch((error) => {
+            console.error("Error adding document: ", error);
+            alert("Error submitting feedback. Please try again later.");
+          });
+      });
+    </script>
+
+        <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            const emailField = document.getElementById('gmail');
+            const emailValue = emailField.value;
+            const emailError = document.getElementById('gmail-error');
+            const successMessage = document.getElementById('success-message');
+            
+            // Regular expression for validating the email format
+            const emailPattern = /^202\d[a-zA-Z]\d{4}@svce\.ac\.in$/;
+            
+            if (!emailPattern.test(emailValue)) {
+                // Prevent form submission and show error message
+                emailError.textContent = 'Email must be in the format 202XxXXXX@svce.ac.in, where X is a number and x is a character.';
+                successMessage.textContent = ''; // Clear success message
+                event.preventDefault();
+            } else {
+                // Clear error message and show success message
+                emailError.textContent = '';
+                successMessage.textContent = 'Submitted successfully!';
+            }
+        });
+    </script>
+  </body>
+</html>

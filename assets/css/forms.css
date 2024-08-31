@@ -1,0 +1,174 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+}
+
+.box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.form h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.inputbox {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.inputbox input,
+.inputbox select,
+.inputbox textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.inputbox input:focus,
+.inputbox select:focus,
+.inputbox textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.inputbox span {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.inputbox select,
+.inputbox textarea {
+  resize: none;
+}
+
+.sub {
+  width: 100%;
+  background: linear-gradient(135deg, #007bff 0%, #1a73e8 100%);
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.sub:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+}
+
+.info-box {
+  color: #444444;
+  background: #fafbff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+}
+
+.info-box i {
+  font-size: 38px;
+  line-height: 0;
+  color: #4154f1;
+}
+
+.info-box h3 {
+  font-size: 22px;
+  color: #012970;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .box {
+    margin: 20px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .box {
+    margin: 15px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .form h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form h2 {
+    font-size: 20px;
+  }
+
+  .inputbox input,
+  .inputbox select,
+  .inputbox textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .sub {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
