@@ -45,257 +45,398 @@
     />
 
     <style>
-  #featureImage {
-    width: 40%;
-  }
+      #featureImage {
+        width: 40%;
+      }
 
-  @media (max-width: 1026px) {
-    .whole-container {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 1242px) {
-    article {
-      flex-direction: column-reverse;
-    }
-    #featureImage {
-      width: 100%;
-    }
-  }
-</style>
+      @media (max-width: 1026px) {
+        .whole-container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 1242px) {
+        article {
+          flex-direction: column-reverse;
+        }
+        #featureImage {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span>FODSE</span>
+        </a>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <!-- <li><a class="nav-link scrollto" href="memb.html">Membership</a></li> -->
+            <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+            <li><a class="nav-link scrollto" href="events.html">Events</a></li>
+            <li>
+              <a class="nav-link scrollto active" href="blog.html">Blogs</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="contact.html">Contact</a>
+            </li>
+            <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <br /><br /><br />
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span>FODSE</span>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <!-- <li><a class="nav-link scrollto" href="memb.html">Membership</a></li> -->
-          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="events.html">Events</a></li>
-          <li><a class="nav-link scrollto active" href="blog.html">Blogs</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-  <br><br><br>
-
-
-  <div class="flex flex-col min-h-dvh">
-    <main class="flex-1 bg-background text-foreground py-12 px-6">
-      <div class="whole-container container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Blogs -->
-        <div class="col-span-2 flex flex-col gap-4">
-
-          <article style="background-color: #f6f9ff;" class="rounded-lg overflow-hidden shadow-lg flex p-4 gap-4">
-            <div class="">
-              <a href="assets/blogs/crowdstrike.pdf">
-                <h2 style="color: #012970;" class="text-3xl font-bold mb-4" >THE GLOBAL BREAKDOWN AT CROWDSTRIKE:
-                  A COMPREHENSIVE ANALYSIS
-                </h2>
-              </a>
-              <div class="flex items-center space-x-4 mb-4">
-                <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8 bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                  </svg>
-                  <span>Akeel Ahamed R S</span>
+    <div class="flex flex-col min-h-dvh">
+      <main class="flex-1 bg-background text-foreground py-12 px-6">
+        <div
+          class="whole-container container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          <!-- Blogs -->
+          <div class="col-span-2 flex flex-col gap-4">
+            <article
+              style="background-color: #f6f9ff"
+              class="rounded-lg overflow-hidden shadow-lg flex p-4 gap-4"
+            >
+              <div class="">
+                <a href="assets/blogs/crowdstrike.pdf">
+                  <h2 style="color: #012970" class="text-3xl font-bold mb-4">
+                    THE GLOBAL BREAKDOWN AT CROWDSTRIKE: A COMPREHENSIVE
+                    ANALYSIS
+                  </h2>
+                </a>
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="flex items-center space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="w-8 h-8 bi bi-person-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                      />
+                    </svg>
+                    <span>Akeel Ahamed R S</span>
+                  </div>
+                  <span class="text-muted-foreground"
+                    >Published on Aug 5, 2024</span
+                  >
                 </div>
-                <span class="text-muted-foreground">Published on Aug 5, 2024</span>
+                <p class="mb-4">
+                  <b>Unforeseen Outage:</b> The Day CrowdStrike Faltered ,On
+                  July 19, 2024, CrowdStrike, a leading cybersecurity company,
+                  experienced a major global outage. <br /><br />
+                  This incident severely impacted numerous businesses and
+                  organizations relying on CrowdStrike’s Falcon sensor for
+                  Windows. The disruption resulted from a faulty update to the
+                  Falcon sensor’s configuration file, which caused widespread
+                  system crashes and operational disruptions.
+                </p>
+                <a href="assets/blogs/crowdstrike.pdf">
+                  <button
+                    type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    Learn more
+                  </button>
+                </a>
               </div>
-              <p class="mb-4"><b>Unforeseen Outage:</b> The Day CrowdStrike Faltered ,On July 19, 2024, CrowdStrike, a leading cybersecurity company, experienced a major global outage. 
-                <br><br>
-                This incident severely impacted numerous businesses and organizations relying on CrowdStrike’s Falcon sensor for Windows. 
-                The disruption resulted from a faulty update to the Falcon sensor’s configuration file, which caused widespread system crashes and operational disruptions.
-              </p>
-              <a href="assets/blogs/crowdstrike.pdf">
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+              <img
+                src="assets/img/blogs/Crowdstrike-768x384.jpg"
+                id="featureImage"
+                alt="Featured Post Image"
+                class="object-cover"
+                style="aspect-ratio: 1200 / 600"
+              />
+            </article>
+
+            <article
+              style="background-color: #f6f9ff"
+              class="rounded-lg overflow-hidden shadow-lg flex p-4 gap-4"
+            >
+              <div class="">
+                <h2 style="color: #012970" class="text-3xl font-bold mb-4">
+                  FODSE INAUGRATION
+                </h2>
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="flex items-center space-x-2">
+                    <img
+                      src="assets/img/logo.jpg"
+                      alt="Author Avatar"
+                      class="w-8 h-8 rounded-full"
+                    />
+                    <span>FODSE</span>
+                  </div>
+                  <span class="text-muted-foreground"
+                    >Published on Aug 4, 2024</span
+                  >
+                </div>
+                <p class="mb-4">
+                  The Forum of Data Science Engineers (FODSE) club at Sri
+                  Venkateswara College of Engineering (SVCE) is set to hold its
+                  inaugural event on September 3rd week, 2023. The event will
+                  mark the launch of the club for the Acadmeic year 2023-24 and
+                  introduce its members to the college community. <br /><br />
+                  FODSE is a student-led club aimed at promoting awareness and
+                  understanding of data science and its applications. The club's
+                  activities include workshops, seminars, and projects related
+                  to data science and engineering. Through these activities,
+                  FODSE hopes to equip its members with the skills and knowledge
+                  needed to succeed in the field of data science.
+                  <br /><br />
+                  The inauguration event will feature speeches from the club's
+                  founding members, as well as from distinguished guests in the
+                  field of data science. The event will also include interactive
+                  sessions and activities for attendees to learn more about the
+                  club's goals and activities.
+                  <br /><br />
+                  The event is open to all SVCE students who are interested in
+                  data science and engineering.
+                </p>
+                <button
+                  type="button"
+                  style="color: 689FFF"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
+                  Register Now!
+                </button>
+              </div>
+              <img
+                src="assets/img/Inauguration.jpeg"
+                id="featureImage"
+                alt="Featured Post Image"
+                class="object-contain"
+                style="aspect-ratio: 1200 / 600"
+              />
+            </article>
+
+            <article
+              style="background-color: #f6f9ff"
+              class="rounded-lg overflow-hidden shadow-lg flex p-4 gap-4"
+            >
+              <div class="">
+                <h2 style="color: #012970" class="text-3xl font-bold mb-4">
+                  FODSE's PEER MENTORSHIP PROGRAM
+                </h2>
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="flex items-center space-x-2">
+                    <img
+                      src="assets/img/logo.jpg"
+                      alt="Author Avatar"
+                      class="w-8 h-8 rounded-full"
+                    />
+                    <span>FODSE</span>
+                  </div>
+                  <span class="text-muted-foreground"
+                    >Published on Aug 3, 2024</span
+                  >
+                </div>
+                <p class="mb-4">
+                  Join our mentorship program at Sri Venkateswara College of
+                  Engineering (SVCE) and unlock your potential! Whether you're
+                  eager to mentor or seek career guidance, our program offers a
+                  supportive community, real-world insights, and valuable
+                  networking opportunities. <br /><br />
+                  Develop strong communication skills and make a difference.
+                  Become a mentor or mentee today and elevate your career
+                  journey with us!
+                </p>
+                <button
+                  type="button"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
                   Learn more
                 </button>
-              </a>
-            </div>
-            <img
-              src="assets/img/blogs/Crowdstrike-768x384.jpg"
-              id="featureImage"
-              alt="Featured Post Image"
-              class="object-cover"
-              style="aspect-ratio: 1200 / 600;"
-            />
-          </article>
-
-          <article style="background-color: #f6f9ff;" class="rounded-lg overflow-hidden shadow-lg flex p-4 gap-4">
-            <div class="">
-              <h2 style="color: #012970;" class="text-3xl font-bold mb-4">FODSE INAUGRATION</h2>
-              <div class="flex items-center space-x-4 mb-4">
-                <div class="flex items-center space-x-2">
-                  <img src="assets/img/logo.jpg" alt="Author Avatar" class="w-8 h-8 rounded-full" />
-                  <span>FODSE</span>
-                </div>
-                <span class="text-muted-foreground">Published on Aug 4, 2024</span>
               </div>
-              <p class="mb-4">The Forum of Data Science Engineers (FODSE) club at Sri Venkateswara College of Engineering (SVCE) is set to hold its inaugural event on September 3rd week, 2023. The event will mark the launch of the club for the Acadmeic year 2023-24 and introduce its members to the college community.
-                <br><br>
-                FODSE is a student-led club aimed at promoting awareness and understanding of data science and its applications. The club's activities include workshops, seminars, and projects related to data science and engineering. Through these activities, FODSE hopes to equip its members with the skills and knowledge needed to succeed in the field of data science.
-                <br><br>
-                The inauguration event will feature speeches from the club's founding members, as well as from distinguished guests in the field of data science. The event will also include interactive sessions and activities for attendees to learn more about the club's goals and activities.
-                <br><br>
-                The event is open to all SVCE students who are interested in data science and engineering.
-              </p>
-              <button type="button" style="color: 689FFF;" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                Register Now!
-              </button>
-            </div>
-            <img
-              src="assets/img/Inauguration.jpeg"
-              id="featureImage"
-              alt="Featured Post Image"
-              style=""
-              class="object-contain"
-              style="aspect-ratio: 1200 / 600;"
-            />
-          </article>
-          
-          <article style="background-color: #f6f9ff;" class="rounded-lg overflow-hidden shadow-lg flex p-4 gap-4">
-            <div class="">
-              <h2 style="color: #012970;" class="text-3xl font-bold mb-4">FODSE's PEER MENTORSHIP PROGRAM</h2>
-              <div class="flex items-center space-x-4 mb-4">
-                <div class="flex items-center space-x-2">
-                  <img src="assets/img/logo.jpg" alt="Author Avatar" class="w-8 h-8 rounded-full" />
-                  <span>FODSE</span>
-                </div>
-                <span class="text-muted-foreground">Published on Aug 3, 2024</span>
-              </div>
-              <p class="mb-4">Join our mentorship program at Sri Venkateswara College of Engineering (SVCE) and unlock your potential! Whether you're eager to mentor or seek career guidance, our program offers a supportive community, real-world insights, and valuable networking opportunities. 
-                <br><br>
-                Develop strong communication skills and make a difference. Become a mentor or mentee today and elevate your career journey with us!
-              </p>
-              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                Learn more
-              </button>
-            </div>
-            <img
-              src="assets/img/Mentorship.jpeg"
-              id="featureImage"
-              alt="Featured Post Image"
-              class="object-contain"
-              style="aspect-ratio: 1200 / 600;"
-            />
-          </article>
+              <img
+                src="assets/img/Mentorship.jpeg"
+                id="featureImage"
+                alt="Featured Post Image"
+                class="object-contain"
+                style="aspect-ratio: 1200 / 600"
+              />
+            </article>
+          </div>
 
-        </div>
-        
-        <div class="space-y-8" >
-          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" style="background-color: #f6f9ff;" data-v0-t="card">
-            <div class="flex flex-col space-y-1.5 p-6">
-              <h3 style="color: #012970;" class="text-2xl font-semibold leading-none tracking-tight">Recent Posts</h3>
+          <div class="space-y-8">
+            <div
+              class="rounded-lg border bg-card text-card-foreground shadow-sm"
+              style="background-color: #f6f9ff"
+              data-v0-t="card"
+            >
+              <div class="flex flex-col space-y-1.5 p-6">
+                <h3
+                  style="color: #012970"
+                  class="text-2xl font-semibold leading-none tracking-tight"
+                >
+                  Recent Posts
+                </h3>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      class="flex items-center space-x-4"
+                      href="assets/blogs/crowdstrike.pdf"
+                      rel="ugc"
+                    >
+                      <img
+                        src="assets/img/blogs/Crowdstrike-768x384.jpg"
+                        alt="Recent Post Image"
+                        width="80"
+                        height="80"
+                        class="w-20 h-20 rounded-lg object-cover"
+                        style="aspect-ratio: 80 / 80; object-fit: cover"
+                      />
+                      <div>
+                        <h3 class="text-lg font-medium">
+                          The Global Breakdown at Crowdstrike: A Comprehensive
+                          Analysis
+                        </h3>
+                        <p class="text-muted-foreground">
+                          Published on Aug 5, 2024
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
             </div>
-            <div class="p-6">
-              <ul class="space-y-4">
-                <li>
-                  <a class="flex items-center space-x-4" href="assets/blogs/crowdstrike.pdf" rel="ugc">
-                    <img
-                      src="assets/img/blogs/Crowdstrike-768x384.jpg"
-                      alt="Recent Post Image"
-                      width="80"
-                      height="80"
-                      class="w-20 h-20 rounded-lg object-cover"
-                      style="aspect-ratio: 80 / 80; object-fit: cover;"
-                    />
-                    <div>
-                      <h3 class="text-lg font-medium">The Global Breakdown at Crowdstrike: A Comprehensive Analysis</h3>
-                      <p class="text-muted-foreground">Published on Aug 5, 2024</p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-              </ul>
+
+            <div class="space-y-8">
+              <div
+                class="rounded-lg border bg-card text-card-foreground shadow-sm"
+                style="background-color: #f6f9ff"
+                data-v0-t="card"
+              >
+                <div class="flex flex-col space-y-1.5 p-6">
+                  <h3
+                    style="color: #012970"
+                    class="text-2xl font-semibold leading-none tracking-tight"
+                  >
+                    Submit Your BLOGS
+                  </h3>
+                </div>
+                <div class="p-6">
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        class="flex items-center space-x-4"
+                        href="assets/blogs/crowdstrike.pdf"
+                        rel="ugc"
+                      >
+                        <div>
+                          <button class="button-24">
+                            <a
+                              href="https://docs.google.com/forms/d/1KgzejpI7yH_qXNyouVC2-O2NZGoMzDEBZkq3FEJ2h-I/formrestricted"
+                              >Submit</a
+                            >
+                          </button>
+                          <p class="text-muted-foreground">
+                            Submit your own blogs below. <br />
+                            Our team will review it and add it to the BLOG
+                            section.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Categories -->
+              <!-- <div
+              class="rounded-lg border bg-card text-card-foreground shadow-sm"
+              style="background-color: #f6f9ff"
+              data-v0-t="card"
+            >
+              <div class="flex flex-col space-y-1.5 p-6">
+                <h3
+                  style="color: #012970"
+                  class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+                >
+                  Categories
+                </h3>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2">
+                  <li>
+                    <a class="hover:underline" href="#" rel="ugc">
+                      Web Development
+                    </a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="#" rel="ugc"> Design </a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="#" rel="ugc">
+                      Programming
+                    </a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="#" rel="ugc">
+                      Technology
+                    </a>
+                  </li>
+                  <li>
+                    <a class="hover:underline" href="#" rel="ugc">
+                      Tutorials
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
             </div>
           </div>
-  
-          <!-- Categories -->
-          <div class="rounded-lg border bg-card text-card-foreground shadow-sm"  style="background-color: #f6f9ff;" data-v0-t="card">
-            <div class="flex flex-col space-y-1.5 p-6">
-              <h3 style="color: #012970;" class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Categories</h3>
-            </div>
-            <div class="p-6">
-              <ul class="space-y-2">
-                <li>
-                  <a class="hover:underline" href="#" rel="ugc">
-                    Web Development
-                  </a>
-                </li>
-                <li>
-                  <a class="hover:underline" href="#" rel="ugc">
-                    Design
-                  </a>
-                </li>
-                <li>
-                  <a class="hover:underline" href="#" rel="ugc">
-                    Programming
-                  </a>
-                </li>
-                <li>
-                  <a class="hover:underline" href="#" rel="ugc">
-                    Technology
-                  </a>
-                </li>
-                <li>
-                  <a class="hover:underline" href="#" rel="ugc">
-                    Tutorials
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-
-      </div>
-    </main>
-  </div>
-
-  <!-- ======= Footer ======= -->
-  <br><br><br>
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>@2024 FODSE club</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by Fodse
-      </div>
+      </main>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- ======= Footer ======= -->
+    <br /><br /><br />
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>@2024 FODSE club</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by Fodse</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-</body>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
