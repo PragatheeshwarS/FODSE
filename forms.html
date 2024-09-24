@@ -55,7 +55,7 @@
             <li><a class="nav-link scrollto" href="team.html">Team</a></li>
             <li><a class="nav-link scrollto" href="events.html">Events</a></li>
             <li><a class="nav-link scrollto" href="blog.html">Blogs</a></li>
-            <!-- <li><a class="nav-link scrollto" href="forms.html">Forms</a></li> -->
+            <li><a class="nav-link scrollto" href="forms.html">Forms</a></li>
             <li>
               <a class="nav-link scrollto" href="contact.html">Contact</a>
             </li>
@@ -139,7 +139,7 @@
             <span>Any Suggestions for improvement?</span>
             <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
           </div>
-          <input type="submit" value="Submit" disabled class="sub" />
+          <input type="submit" value="Submit" class="sub" />
         </form>
       </div>
     </div>
@@ -189,7 +189,7 @@
 
         
 
-        set(ref(db, "Feedback/" + feedbackData.username), feedbackData)
+        set(ref(db, "AzureWorkshop/" + feedbackData.username), feedbackData)
           .then(() => {
             alert("Feedback Submitted Successfully!");
             document.getElementById("contactForm").reset();
