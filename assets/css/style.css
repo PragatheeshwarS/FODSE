@@ -2441,3 +2441,27 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.learn-more-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.learn-more-btn:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
