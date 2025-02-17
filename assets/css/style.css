@@ -2466,47 +2466,6 @@ section {
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
 }
 
-.highlighted-section {
-  border: 4px solid #007bff; /* Primary blue border */
-  border-radius: 12px; /* Rounded corners */
-  padding: 25px; /* More spacing for better layout */
-  background: linear-gradient(135deg, #e3f2fd, #ffffff); /* Subtle gradient */
-  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.1); /* Soft glow effect */
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect */
-.highlighted-section:hover {
-  transform: scale(1.02); /* Slight pop-out effect */
-  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3); /* Brighter glow */
-}
-
-/* Animated glowing border */
-@keyframes glowing-border {
-  0% {
-    box-shadow: 0 0 10px #007bff;
-  }
-  50% {
-    box-shadow: 0 0 20px #0056b3;
-  }
-  100% {
-    box-shadow: 0 0 10px #007bff;
-  }
-}
-
-.highlighted-section::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  border-radius: 12px;
-  border: 4px solid rgba(0, 123, 255, 0.5);
-  animation: glowing-border 2s infinite alternate;
-}
-
 .ongoing-event-label {
   position: absolute;
   bottom: 10px;
