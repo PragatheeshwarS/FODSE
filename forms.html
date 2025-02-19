@@ -210,7 +210,7 @@
             suggestions: formData.get("suggestions"),
           };
 
-          set(ref(db, "AzureWorkshop/" + feedbackData.username), feedbackData)
+          set(ref(db, "Vizathon/" + feedbackData.username), feedbackData)
             .then(() => {
               alert("Feedback Submitted Successfully!");
               document.getElementById("contactForm").reset();
